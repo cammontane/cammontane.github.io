@@ -1,0 +1,71 @@
+
+{
+    "joueurs": [
+        {
+            "firstName": "Ciprian",
+            "lastName": "Tatarusanu",
+            "position": "G",
+            "force": "82"
+        },
+        {
+            "firstName": "Diego",
+            "lastName": "Carlos",
+            "position": "D",
+            "force": "81"
+        },
+        {
+            "firstName": "Nicolas",
+            "lastName": "Pallois",
+            "position": "D",
+            "force": "78"
+        },
+        {
+            "firstName": "Lucas",
+            "lastName": "Lima",
+            "position": "D",
+            "force": "79"
+        },
+        {
+            "firstName": "Enock",
+            "lastName": "Kwateng",
+            "position": "D",
+            "force": "75"
+        },
+        {
+            "firstName": "Abdoulaye",
+            "lastName": "Touré",
+            "position": "M",
+            "force": "78"
+        },
+        {
+            "firstName": "Rongier",
+            "lastName": "Valentin",
+            "position": "M",
+            "force": "80"
+        },
+        {
+            "firstName": "Andrei",
+            "lastName": "Girotto",
+            "position": "M",
+            "force": "76"
+        },
+        {
+            "firstName": "Lucas",
+            "lastName": "Evangelista",
+            "position": "M",
+            "force": "77"
+        },
+        {
+            "firstName": "Gabriel",
+            "lastName": "Boschilia",
+            "position": "A",
+            "force": "81"
+        },
+        {
+            "firstName": "Emiliano",
+            "lastName": "Sala",
+            "position": "A",
+            "force": "82"
+        }
+    ]
+}

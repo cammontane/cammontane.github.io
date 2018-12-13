@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jeu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="jeu.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Monoton" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="presentEquipe" class="row">
+            <div class="col-2">
+                <ul id="selectionDom" class="selection">
+                    <li class="listEquipe">Amiens</li>
+                    <li class="listEquipe">Angers</li>
+                    <li class="listEquipe">Bordeaux</li>
+                    <li class="listEquipe">Caen</li>
+                    <li class="listEquipe">Dijon</li>
+                    <li class="listEquipe">Guingamp</li>
+                    <li class="listEquipe">Lille</li>
+                    <li class="listEquipe">Lyon</li>
+                    <li class="listEquipe">Marseille</li>
+                    <li class="listEquipe">Monaco</li>
+                    <li class="listEquipe">Montpellier</li>
+                    <li class="listEquipe">Nantes</li>
+                    <li class="listEquipe">Nice</li>
+                    <li class="listEquipe">Nimes</li>
+                    <li class="listEquipe">Paris SG</li>
+                    <li class="listEquipe">Reims</li>
+                    <li class="listEquipe">Rennes</li>
+                    <li class="listEquipe">Saint-Etienne</li>
+                    <li class="listEquipe">Strasbourg</li>
+                    <li class="listEquipe">Toulouse</li>
+                </ul>
+            </div>
+            <div class="col-8 mainPage">
+                <div class="container-fluid">
+                    <div class="row row1" style="height:70px">
+                        <div class="col-1"></div>
+                        <div class="col-5"><input type="text" id="dom" value="" class="equipe"></div>
+                        <div class="col-5"><input type="text" id="ext" value="" class="equipe"></div>
+                        <div class="col-1"></div>
+                    </div>
+                    <div class="row rowscore" style="height:80px">
+                        <div class="col-3" id="team1"></div>
+                        <div class="col-3" id="score1">0</div>
+                        
+                        <div class="col-3" id="score2">0</div>
+                        <div class="col-3" id="team2"></div>
+                    </div>
+                    <div class="row minutebut" style="height:100px">
+                        <div class="col-1"></div>
+                        <div class="col-5" id="minute1"></div>
+                      
+                        <div class="col-5" id="minute2"></div>
+                        <div class="col-1"></div>
+                    </div>
+                    <div class="row row2" style="height:100px">
+                            <div class="col" id="temps"></div>       
+                        </div>
+                    
+                    <div class="col"><button type="button" name="button" onclick=choix() id="choix">Match</button></div>
+                  
+                    
+                    <div class="row row3" style="height:100px">
+                        <div class="col" id="minuteBut"></div>
+                    </div>
+                   
+                    <div class="row rowstats1" style="height:30px">
+                            <div class="col-3"></div>
+                            <div class="col-3">Tirs : </div>
+                            <div class="col-1" id="tirs1"></div>
+                            <div class="col-1" id="tirs2"></div>
+                            <div class="col-4"></div>
+                    </div>
+                    <div class="row rowstats1" style="height:30px">
+                            <div class="col-3"></div>
+                            <div class="col-3">Possession :</div>
+                            <div class="col-1" id="possessionResult1"></div>
+                            <div class="col-1" id="possessionResult2"></div>
+                            
+                            <div class="col-4"></div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-2" id="colonne3">
+                <ul id="selectionExt" class="selection"> 
+                    <li class="listEquipe">Amiens</li>
+                    <li class="listEquipe">Angers</li>
+                    <li class="listEquipe">Bordeaux</li>
+                    <li class="listEquipe">Caen</li>
+                    <li class="listEquipe">Dijon</li>
+                    <li class="listEquipe">Guingamp</li>
+                    <li class="listEquipe">Lille</li>
+                    <li class="listEquipe">Lyon</li>
+                    <li class="listEquipe">Marseille</li>
+                    <li class="listEquipe">Monaco</li>
+                    <li class="listEquipe">Montpellier</li>
+                    <li class="listEquipe">Nantes</li>
+                    <li class="listEquipe">Nice</li>
+                    <li class="listEquipe">Nîmes</li>
+                    <li class="listEquipe">Paris SG</li>
+                    <li class="listEquipe">Reims</li>
+                    <li class="listEquipe">Rennes</li>
+                    <li class="listEquipe">Saint-Etienne</li>
+                    <li class="listEquipe">Strasbourg</li>
+                    <li class="listEquipe">Toulouse</li>
+                </ul>
+            </div>
+          
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"></script>
+        <script src="jeu.js"></script>
+
+
+</body>
+
+</html>

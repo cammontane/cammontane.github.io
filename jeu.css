@@ -1,0 +1,165 @@
+
+td{
+    text-align: center;
+}
+
+.equipe{
+   width: 300px;
+   margin-left : 0px;   
+}
+
+#temps{
+    font-size :4em;
+    text-align: center;
+    padding-top : 5px;  
+}
+
+input{
+    border: 0;
+    margin-top: 10px;
+}
+
+body{
+    
+    background: url(stadium-918830_1280.jpg) fixed;
+    font-family: 'Bungee Inline', cursive;
+    color: rgb(19, 19, 83);
+    
+}
+
+.listEquipe{
+    background-color: white; 
+    width: 100%;   
+    min-width: 150px;
+    
+    
+}
+.selection .ui-selecting { 
+      background-color: rgb(53, 70, 218); 
+    width: 100%; 
+    border-radius: 5px;
+}
+.selection .ui-selected { 
+      background: rgb(53, 70, 218); 
+      color: white; 
+      width: 100%; 
+      border-radius : 5px;
+      
+}
+.selection { 
+      list-style-type: none; 
+      margin: 0; 
+      padding: 0; 
+      width: 100%; 
+      margin-top: 20px; 
+      
+}
+.selection li { 
+      margin: 1px; 
+      padding-top: 2px; 
+      font-size: 1em; 
+      height: 30px; 
+      cursor:pointer; 
+      text-align: center; 
+      background-color: rgba(231, 226, 223, 0.3); 
+      font-family: 'Bungee Inline', cursive;
+    }
+
+#selectionDom li{
+        box-shadow: 2px 0px 1px ;
+        
+}
+
+#selectionExt li{
+    box-shadow: -2px 0px 1px ;
+    
+}
+
+#selectionExt .ui-selecting { 
+      background-color: rgb(59, 86, 145); 
+      width: 100%;
+      border-radius: 5px;
+    }
+#selectionExt .ui-selected { 
+      background: rgb(59, 86, 145); 
+      color: white; 
+      width: 100%; 
+      border-radius: 5px; }
+
+      #selectionExt {
+    
+  
+    border-radius: 10px;
+    
+}
+.selection h1{
+        margin-left: 30px;
+    }
+    
+#temps, #dom, #ext, #choix, #effacer {
+    height: 50px;
+}
+
+.mainPage{
+    text-align: center;
+}
+
+#choix{
+    
+    background-color: rgba( 255 , 255, 255, 0);
+    color: rgb(6, 13, 71);
+    border: none;
+    font-size: 2em;
+    cursor:pointer; 
+
+}
+
+.row1{
+    margin-top : 20px;
+}
+
+#score1, #score2{
+    font-size: 4em;
+    font-family: 'Bungee Inline', cursive;
+}
+
+#minuteBut{
+    font-weight: bold;
+    font-size : 2em;
+    
+    
+}
+
+#possessionResult1 {
+    margin-right : 0px;
+}
+
+#dom, #ext {
+    background-color:rgba( 255 , 255, 255, 0.2);
+   font-size: 2em;
+   text-align: center;
+   color: rgb(5, 5, 95);
+   border: 2px inset;
+
+}
+
+#team1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    text-align: left;
+    margin-top :50px;
+    text-shadow: 0px 1px 3px;
+    
+    
+}
+
+
+
+#score1{
+    text-align: left;
+}
+
+#score2{
+    text-align: right;
+}
+
